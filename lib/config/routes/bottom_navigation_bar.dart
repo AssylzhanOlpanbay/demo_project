@@ -1,18 +1,20 @@
 import 'package:demo_practice/features/presentation/events/events_page.dart';
+import 'package:demo_practice/features/presentation/tickets/tickets.dart';
 import 'package:flutter/material.dart';
 
-class BottomNavigationBar extends StatefulWidget {
-  const BottomNavigationBar({super.key});
+class BottomNavBar extends StatefulWidget {
+  const BottomNavBar({super.key});
 
   @override
-  State<BottomNavigationBar> createState() => _BottomNavBarState();
+  State<BottomNavBar> createState() => _BottomNavBarState();
 }
 
-class _BottomNavBarState extends State<BottomNavigationBar> {
+class _BottomNavBarState extends State<BottomNavBar> {
   int index = 0;
 
   final scrrens = [
     EventPage(),
+    TicketPage(),
   ];
 
   @override

@@ -1,9 +1,10 @@
-import 'package:demo_exam/features/data/provider/events/event_provider.dart';
-import 'package:demo_exam/features/presentation/screens/events/event_details.dart';
+
+import 'package:demo_practice/core/resources/models.dart';
+import 'package:demo_practice/features/presentation/events/events_details.dart';
+import 'package:demo_practice/features/presentation/events/components/events_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../data/model/event_model.dart';
 
 class EventPage extends StatelessWidget {
   const EventPage({super.key});
@@ -79,14 +80,14 @@ class EventPage extends StatelessWidget {
 }
 
 class EventList extends StatelessWidget {
-  List<EventC> eventList = [];
+  List<EventA> eventList = [];
   EventList({super.key, required this.eventList});
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: eventList.length,
       itemBuilder: (context, index) {
-        EventC user = eventList[index];
+        EventA user = eventList[index];
         return ListTile(
           onTap: () {
             Navigator.push(

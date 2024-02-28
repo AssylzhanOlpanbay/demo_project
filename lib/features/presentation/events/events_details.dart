@@ -2,7 +2,7 @@ import 'package:demo_practice/core/resources/models.dart';
 import 'package:flutter/material.dart';
 
 class EventDetails extends StatelessWidget {
-  final EventC event;
+  final EventA event;
 
   EventDetails({
     required this.event,

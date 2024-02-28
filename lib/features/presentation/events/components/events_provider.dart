@@ -2,22 +2,20 @@ import 'package:demo_practice/core/resources/model.dart';
 import 'package:demo_practice/core/resources/models.dart';
 import 'package:flutter/cupertino.dart';
 
-import '../../model/converter.dart';
-import '../../model/event_model.dart';
 
 class EventProvider extends ChangeNotifier {
-  List<EventC> testList = [];
-  List<EventC> foundList = [];
+  List<EventA> testList = [];
+  List<EventA> foundList = [];
 
   void init() {
     testList = eventList;
     foundList = eventList;
   }
 
-  List<EventC> get events => foundList;
+  List<EventA> get events => foundList;
 
   void sortEvent(String enteredKeyword) {
-    List<EventC> results = [];
+    List<EventA> results = [];
     if (enteredKeyword.toLowerCase().contains("true")) {
       results = testList
           .where((event) => event.eventReadStatus

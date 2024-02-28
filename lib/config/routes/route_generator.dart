@@ -1,5 +1,4 @@
 import 'package:demo_practice/config/routes/app_routes.dart';
-import 'package:demo_practice/config/routes/bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
 class RouteGenerator {
@@ -11,7 +10,7 @@ class RouteGenerator {
       case AppRoutes.navigationBar:
         return MaterialPageRoute(
           builder: (context) {
-            return BottomNavigationBar();
+            return BottomAppBar();
             // return MainPage(userCredential: userCredential);
           },
         );        

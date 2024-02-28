@@ -1,11 +1,12 @@
-import 'package:demo_exam/features/data/model/event_model.dart';
+
+import 'package:demo_practice/core/resources/data.dart';
 import 'package:demo_practice/core/resources/models.dart';
 
-import '../json/datas.dart';
 
-List<EventC> eventList = events.map(
+
+List<EventA> eventList = events.map(
   (eventData) {
-    return EventC(
+    return EventA(
       eventId: eventData['eventId'],
       eventTitle: eventData['eventTitle'],
       eventText: eventData['eventText'],
